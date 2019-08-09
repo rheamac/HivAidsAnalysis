@@ -1,0 +1,957 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0515.1630                               -->
+<workbook source-build='2019.2.0 (20192.19.0515.1630)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' inline='true' name='federated.07cem731sehj5y1cu8r3q03omc5w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='textscan.14d7qr91qoiwpl19ivrbo1sxpoon'>
+            <connection class='textscan' directory='C:/Users/rheamac/Downloads' filename='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.14d7qr91qoiwpl19ivrbo1sxpoon' name='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv' table='[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='YEAR' ordinal='0' />
+            <column datatype='string' name='NEIGHBORHOOD' ordinal='1' />
+            <column datatype='string' name='RACE/ETHNICITY' ordinal='2' />
+            <column datatype='string' name='AGE' ordinal='3' />
+            <column datatype='integer' name='TOTAL NUMBER OF HIV DIAGNOSES' ordinal='4' />
+            <column datatype='string' name='HIV DIAGNOSES PER 100,000 POPULATION' ordinal='5' />
+            <column datatype='integer' name='TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES' ordinal='6' />
+            <column datatype='string' name='PROPORTION OF CONCURRENT HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES' ordinal='7' />
+            <column datatype='integer' name='TOTAL NUMBER OF AIDS DIAGNOSES' ordinal='8' />
+            <column datatype='string' name='AIDS DIAGNOSES PER 100,000 POPULATION' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YEAR]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>YEAR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEIGHBORHOOD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NEIGHBORHOOD]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>NEIGHBORHOOD</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RACE/ETHNICITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RACE/ETHNICITY]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>RACE/ETHNICITY</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL NUMBER OF HIV DIAGNOSES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL NUMBER OF HIV DIAGNOSES]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>TOTAL NUMBER OF HIV DIAGNOSES</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIV DIAGNOSES PER 100,000 POPULATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HIV DIAGNOSES PER 100,000 POPULATION]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>HIV DIAGNOSES PER 100,000 POPULATION</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROPORTION OF CONCURRENT HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PROPORTION OF CONCURRENT HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>PROPORTION OF CONCURRENT HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TOTAL NUMBER OF AIDS DIAGNOSES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TOTAL NUMBER OF AIDS DIAGNOSES]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>TOTAL NUMBER OF AIDS DIAGNOSES</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AIDS DIAGNOSES PER 100,000 POPULATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AIDS DIAGNOSES PER 100,000 POPULATION]</local-name>
+            <parent-name>[HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity.csv]</parent-name>
+            <remote-alias>AIDS DIAGNOSES PER 100,000 POPULATION</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+      <column caption='Aids Diagnoses Per 100,000 Population' datatype='string' name='[AIDS DIAGNOSES PER 100,000 POPULATION]' role='dimension' type='nominal' />
+      <column caption='Hiv Diagnoses Per 100,000 Population' datatype='string' name='[HIV DIAGNOSES PER 100,000 POPULATION]' role='dimension' type='nominal' />
+      <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Proportion Of Concurrent Hiv/Aids Diagnoses Among All Hiv Diagnoses' datatype='string' name='[PROPORTION OF CONCURRENT HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES]' role='dimension' type='nominal' />
+      <column caption='Race/Ethnicity' datatype='string' name='[RACE/ETHNICITY]' role='dimension' type='nominal' />
+      <column caption='Total Number Of Aids Diagnoses' datatype='integer' name='[TOTAL NUMBER OF AIDS DIAGNOSES]' role='measure' type='quantitative' />
+      <column caption='Total Number Of Concurrent Hiv/Aids Diagnoses' datatype='integer' name='[TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES]' role='measure' type='quantitative' />
+      <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+      <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+      <column-instance column='[TOTAL NUMBER OF AIDS DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.554945' measure-ordering='alphabetic' measure-percentage='0.445055' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:NEIGHBORHOOD:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Port Richmond&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bayside - Little Neck&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bedford Stuyvesant - Crown Heights&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;East Flatbush - Flatbush&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kingsbridge - Riverdale&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Long Island City - Astoria&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Southeast Queens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Queens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pelham - Throgs Neck&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ridgewood - Forest Hills&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;East New York&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lower Manhattan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Greenwich Village - SoHo&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Upper Eastside&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Upper Westside&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Central Harlem - Morningside Heights&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Willowbrook&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;East Harlem&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sunset Park&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Union Square - Lower Eastside&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fordham - Bronx Park&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Flushing - Clearview&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Northeast Bronx&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Williamsburg - Bushwick&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Canarsie - Flatlands&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Stapleton - St. George&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gramercy Park - Murray Hill&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Greenpoint&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hunts Point - Mott Haven&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rockaway&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unknown&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Coney Island - Sheepshead Bay&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;High Bridge - Morrisania&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bensonhurst - Bay Ridge&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Chelsea - Clinton&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Downtown - Heights - Park Slope&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fresh Meadows&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Southwest Queens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;South Beach - Tottenville&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Washington Heights - Inwood&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Borough Park&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Crotona - Tremont&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:AGE:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;20 - 29&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;40 - 49&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;30 - 39&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;60+&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;0 - 19&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;50 - 59&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;All&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.07cem731sehj5y1cu8r3q03omc5w]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Arial'>HIV Diagnosis count vs Age</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+            <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]'>
+            <groupfilter from='&quot;0 - 19&quot;' function='range' level='[none:AGE:nk]' to='&quot;60+&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</rows>
+        <cols>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</cols>
+      </table>
+      <simple-id uuid='{A6B5D436-3EDB-4267-ACFA-384FA49CB7C0}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>HIV Diagnoses Vs Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]'>
+            <groupfilter from='&quot;0 - 19&quot;' function='range' level='[none:AGE:nk]' to='&quot;60+&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</rows>
+        <cols>([federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk] * [federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk])</cols>
+      </table>
+      <simple-id uuid='{D5C08EF3-525D-495B-9F17-B50BA0336D71}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' included-values='in-range'>
+            <min>150</min>
+            <max>315</max>
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#edc948' />
+                <format attr='size' value='1.0104972124099731' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</rows>
+        <cols>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]</cols>
+      </table>
+      <simple-id uuid='{4033D3D6-62D4-433F-BA58-673CA6DFABFD}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]'>
+            <groupfilter function='member' level='[none:AGE:nk]' member='&quot;20 - 29&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter from='&quot;Bayside - Little Neck&quot;' function='range' level='[none:NEIGHBORHOOD:nk]' to='&quot;Union Square - Lower Eastside&quot;' />
+              <groupfilter from='&quot;Upper Eastside&quot;' function='range' level='[none:NEIGHBORHOOD:nk]' to='&quot;Willowbrook&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2013</max>
+          </filter>
+          <filter class='quantitative' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' included-values='in-range'>
+            <min>100</min>
+            <max>269</max>
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#c290b4' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]</rows>
+        <cols>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]</cols>
+      </table>
+      <simple-id uuid='{6797A1BB-863D-4842-B36A-03B869E2C0C1}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Regular'>Aids Diagnoses based on Age and Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Aids Diagnoses' datatype='integer' name='[TOTAL NUMBER OF AIDS DIAGNOSES]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL NUMBER OF AIDS DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]'>
+            <groupfilter from='&quot;0 - 19&quot;' function='range' level='[none:AGE:nk]' to='&quot;60+&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]</rows>
+        <cols>([federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk] * [federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk])</cols>
+      </table>
+      <simple-id uuid='{292B4ED6-DF8D-4265-AA2E-7C1F4A92ABB9}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Regular'>Aids and HIV comparison based on Age and Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='HIV_AIDS_Diagnoses_by_Neighborhood__Age_Group__and_Race_Ethnicity' name='federated.07cem731sehj5y1cu8r3q03omc5w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.07cem731sehj5y1cu8r3q03omc5w'>
+            <column datatype='string' name='[AGE]' role='dimension' type='nominal' />
+            <column caption='Neighborhood' datatype='string' name='[NEIGHBORHOOD]' role='dimension' type='nominal' />
+            <column caption='Race/Ethnicity' datatype='string' name='[RACE/ETHNICITY]' role='dimension' type='nominal' />
+            <column caption='Total Number Of Aids Diagnoses' datatype='integer' name='[TOTAL NUMBER OF AIDS DIAGNOSES]' role='measure' type='quantitative' />
+            <column caption='Total Number Of Hiv Diagnoses' datatype='integer' name='[TOTAL NUMBER OF HIV DIAGNOSES]' role='measure' type='quantitative' />
+            <column caption='Year' datatype='integer' name='[YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[AGE]' derivation='None' name='[none:AGE:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NEIGHBORHOOD]' derivation='None' name='[none:NEIGHBORHOOD:nk]' pivot='key' type='nominal' />
+            <column-instance column='[RACE/ETHNICITY]' derivation='None' name='[none:RACE/ETHNICITY:nk]' pivot='key' type='nominal' />
+            <column-instance column='[YEAR]' derivation='None' name='[none:YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL NUMBER OF AIDS DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TOTAL NUMBER OF HIV DIAGNOSES]' derivation='Sum' name='[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF AIDS DIAGNOSES:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.07cem731sehj5y1cu8r3q03omc5w].[sum:TOTAL NUMBER OF HIV DIAGNOSES:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]'>
+            <groupfilter from='&quot;0 - 19&quot;' function='range' level='[none:AGE:nk]' to='&quot;60+&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]'>
+            <groupfilter from='&quot;Bayside - Little Neck&quot;' function='range' level='[none:NEIGHBORHOOD:nk]' to='&quot;Willowbrook&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:RACE/ETHNICITY:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;Asian/Pacific Islander&quot;' />
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;Black&quot;' />
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;Hispanic&quot;' />
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;Multiracial&quot;' />
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;Native American&quot;' />
+              <groupfilter function='member' level='[none:RACE/ETHNICITY:nk]' member='&quot;White&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk]' included-values='in-range'>
+            <min>2010</min>
+            <max>2013</max>
+          </filter>
+          <slices>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:AGE:nk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:YEAR:qk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:NEIGHBORHOOD:nk]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[:Measure Names]</column>
+            <column>[federated.07cem731sehj5y1cu8r3q03omc5w].[none:RACE/ETHNICITY:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.07cem731sehj5y1cu8r3q03omc5w].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.07cem731sehj5y1cu8r3q03omc5w].[Multiple Values]</rows>
+        <cols>([federated.07cem731sehj5y1cu8r3q03omc5w].[none:RACE/ETHNICITY:nk] / [federated.07cem731sehj5y1cu8r3q03omc5w].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{F47A5460-82C6-4960-A002-C67C0D1BF347}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='151'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3F77041A-92A1-4754-8754-2AB371F21590}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99464C8C-2E10-4B11-8F18-5A4C75B1910C}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{162739EA-3633-4E89-AC2B-C91D7DCA5F28}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5DE90D15-06CD-461F-A5B3-F088C0ED4E36}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CF6D01B6-C0CC-4F84-BB25-20BF0C8FABE2}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.07cem731sehj5y1cu8r3q03omc5w].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB54EF91-2BA9-4813-BAEB-A4B85B262ECF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
